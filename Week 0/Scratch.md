@@ -6,8 +6,6 @@
 
 1. Car
 2. Signal (Red, Yellow, Green)
-3. Map
-4. Turn signals
 
 #### Flow Chart
 
@@ -19,7 +17,5 @@
 - Wait for the crossing car to pass by and signal to turn green
 - Press up arrow and keep moving forward
 - If didn't stop at red, accident and GAME OVER
-- Traffic Signal says free left, Move left or stop
-- If going forward, accident and GAME OVER
 
 #### Pesudocode
