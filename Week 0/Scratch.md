@@ -18,4 +18,8 @@
 - Press up arrow and keep moving forward
 - If didn't stop at red, accident and GAME OVER
 
-#### Pesudocode
+#### Pseudocode
+
+1. If spacebar is pressed
+2. Start Game
+3. When
