@@ -22,4 +22,3 @@
 
 1. If spacebar is pressed
 2. Start Game
-3. When
