@@ -22,3 +22,4 @@
 
 1. If spacebar is pressed
 2. Start Game
+3. If light is green, move the car forward
