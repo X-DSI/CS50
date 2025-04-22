@@ -82,7 +82,7 @@
    13. Display updated scorecard
 7. IF upper_section_total >= 63:
    1. total_score += 35
-8. total*score = sum of all category scores + YAHTZEE* BONUS
+8. total_score = sum of all category scores + YAHTZEE_BONUS
 9. Display final scorecard
 10. Display total_score
 11. END game
