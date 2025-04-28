@@ -18,13 +18,15 @@
 4. Initialize total_score = 0
 5. Set YAHTZEE_BONUS = 0
 6. Set Theme_value = 0
-7. IF Theme_value == 0:
-   1. Change theme to Dark
-8. ELSE
-   1. Change theme to Light
-9. FOR each of the 13 rounds:
-10. Initialize roll_count = 0
-11. WHILE roll_count < 3:
+7. BUTTON theme:
+   1. IF Theme_value == 0:
+      1. Change theme to Dark
+   2. ELSE
+      1. Change theme to Light
+         1. Update Theme_value = 1
+8. FOR each of the 13 rounds:
+9. Initialize roll_count = 0
+10. WHILE roll_count < 3:
     1. If roll_count == 0:
        1. Roll all 5 dices
     2. ELSE:
@@ -32,14 +34,14 @@
        2. Re-Roll the rest of the dices
     3. Display current Dice values
     4. roll_count += 1
-12. If player decides to hold all the dice:
+11. If player decides to hold all the dice:
     1. BREAK out of WHILE Loop
-13. Display final Dice
-14. Show unscored Categories
-15. Ask player to select an scoring Category
-16. WHILE Player selects already filled category:
+12. Display final Dice
+13. Show unscored Categories
+14. Ask player to select an scoring Category
+15. WHILE Player selects already filled category:
     1. Ask player to select unscored/different category
-17. score = Function calculate_score(dice, selected_category):
+16. score = Function calculate_score(dice, selected_category):
     1. counts = count occurrences of each die value
     2. SWITCH category:
        1. CASE "Ones" to "Sixes":
@@ -77,17 +79,17 @@
        8. CASE "Chance":
           1. return sum of all dices
     3. END SWITCH
-18. IF selected_category is in Upper Section:
+17. IF selected_category is in Upper Section:
     1. upper_section_total += score
-19. IF selected_category == "Yahtzee" AND score ==50:
+18. IF selected_category == "Yahtzee" AND score ==50:
     1. IF Yahtzee already scored:
        1. YAHTZEE_BONUS +=100
-20. Mark selected_category as scored in scorecard
-21. Store score in scorecard[selected_category]
-22. Display updated scorecard
-23. IF upper_section_total >= 63:
-24. total_score += 35
-25. total_score = sum of all category scores + YAHTZEE_BONUS
-26. Display final scorecard
-27. Display total_score
-28. END game
+19. Mark selected_category as scored in scorecard
+20. Store score in scorecard[selected_category]
+21. Display updated scorecard
+22. IF upper_section_total >= 63:
+23. total_score += 35
+24. total_score = sum of all category scores + YAHTZEE_BONUS
+25. Display final scorecard
+26. Display total_score
+27. END game
